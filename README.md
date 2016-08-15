@@ -15,6 +15,9 @@ Then run the following:
 
 5. Install the Selenium2Library for Robot Framework
 
+    pip install robotframework-selenium2library
+    
+    To make sure latest version is installed - run the following command
     pip install --upgrade robotframework-seleniumlibrary
 
 6. I used Sublime Text as my editor to create/edit tests. To install the plugin for robot framework. The easiest way to install is to use Package Control and search for: Robot Framework Assistant
