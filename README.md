@@ -29,12 +29,24 @@ Then run the following:
 * The robot_framework_workspace variable should have the path of the Robot framework folder in this repo
 
 
-Running the Test
+Browser support
+You need to have chromedriver on your system. Download chromedriver.exe from http://chromedriver.storage.googleapis.com/index.html and add downloaded path to system variable "Path"
 
+On Mac
+brew install chromedriver
+
+To verify chromedriver is installed , run chromedriver --version
+
+To run the test on firefox, make sure firefox is installed in the machine. Change in script file is reqd:
+1. In the file Risk_Profile_Slider.robot, edit line #10 to replace chrome with firefox. 
+2. In the file Asset_Manager_Recommendations.robot, edit line #12 to replace chrome with firefox
+
+
+Running the Test
 To run the test, navigate to the Robot Framework folder and from command line  type
 
     pybot --outputdir Results --timestampoutputs Tests/*.robot
-
+I
 
 Viewing Reports
 
