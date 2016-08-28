@@ -8,7 +8,7 @@ Suite Teardown    Close All Browsers
 
 
 *** Variables ***
-${baseurl}  http://localhost:8080/asset-manager-react1
+${baseurl}  http://localhost:8081/asset-manager-react1
 ${Browser}  chrome
 ${slider_locator}  name=risk
 ${recommendations}  xpath=//ul/li
