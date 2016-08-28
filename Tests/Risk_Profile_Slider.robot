@@ -45,7 +45,7 @@ User should be able to move slider right
 	[Tags]	Smoke
 	${sliderval}    Get Element Attribute  ${slider_locator}@value
 	Log To Console  ${sliderval}
-    ${data}=  Read CSV File  ./Tests/ratings.csv
+    ${data}=  Read CSV File  ./Tests/expectedratings.csv
     Log To Console  ${data[0]}
     :For  ${index}  IN RANGE  4  9
     \  Log To Console  ${index}
