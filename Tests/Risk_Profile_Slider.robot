@@ -56,9 +56,9 @@ User should be able to move slider right
     \  Drag And Drop By Offset  ${slider_locator}  ${offset}  0
 
 	\  ${sliderval}    Get Element Attribute  ${slider_locator}@value
-    \  Log To Console  ${sliderval}
+    \  Log To Console  Slider position is at ${sliderval}
     \  ${offset}=   Evaluate    ${offset}+100
-    \   Log to Console      ${offset}
+    \   Log to Console      Need to move slider by (px) ${offset}
 
 
 User should be able to move slider left
@@ -75,7 +75,7 @@ User should be able to move slider left
     \  Drag And Drop By Offset  ${slider_locator}  ${offset}  0
 
     \  ${sliderval}    Get Element Attribute  ${slider_locator}@value
-    \  Log To Console  ${sliderval}
+    \  Log To Console  Slider position is at ${sliderval}
     \  ${offset}=   Evaluate    ${offset}-100
     \   Log to Console      ${offset}
 
