@@ -22,7 +22,7 @@ ${offset}   100
 User can open page and see the title
 	[Documentation]    This is for title verification
 	[Tags]     Smoke
-    Open Browser  http://localhost:8080/asset-manager-react1  ${Browser}
+    Open Browser  ${baseurl}  ${Browser}
     Maximize Browser Window
     Wait Until Page Contains  React Tutorial
     Title Should Be     React Tutorial
